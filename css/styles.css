@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #081b29;
+    position: relative;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.active,
+header ul li a:hover {
+    color: #00abf0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 100px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    padding: 20px;
+}
+
+header ul li a {
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+a.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section.home {
+    width: 600px;
+    margin: 100px;
+}
+
+/*img {
+    position: absolute;
+    top: -25%;
+    right: -120%;
+    width: 90%;
+}*/
+
+img {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    width: 40%;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    font-size: 30px;
+    color: #00abf0;
+    margin-bottom: 25px;
+}
+
+p {
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+
+button.btn {
+    background-color: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 6px;
+    padding: 10px 40px;
+    color: #00abf0;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+button.btn.first {
+    margin-right: 35px;
+    background: #00abf0;
+    color: #081b29;
+    position: relative;
+}
+
+button.btn.first a {
+    color: #081b29;
+    z-index: 1;
+    position: relative;
+    transition: 0.6;
+}
+
+button.btn.first::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #081b29;
+    transition: 0.6s;
+}
+
+button.btn.first:hover:before {
+    width: 100%;
+}
+
+button.btn.first:hover a {
+    color: #00abf0;
+}
+
+button.btn.second {
+    position: relative;
+}
+
+button.btn.second a {
+    z-index: 5;
+    position: relative;
+    color: #00abf0;
+}
+
+button.btn.second::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #00abf0;
+    transition: 0.6s;
+}
+
+button.btn.second:hover:before {
+    width: 100%;
+}
+
+button.btn.second:hover a {
+    color: #081b29;
+}
+
+i {
+    font-size: 30px;
+}
+
+footer {
+    margin-left: 100px;
+}
+
+footer a {
+    color: #00abf0;
+    display: inline-flex;
+    border: 3px solid;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px 0 0;
+}
